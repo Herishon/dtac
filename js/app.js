@@ -2,22 +2,22 @@
 const topHeader = document.getElementById("top-header");
 
 window.addEventListener("scroll", function(){
-  if(this.window.scrollY > 0) {
+  if(window.scrollY > 0) {
     topHeader.classList.add("opacity-0");
   } else {
     topHeader.classList.remove("opacity-0");
   }
-})
+});
 
 // Language toggler button
-const langToggleBtn = document.getElementById("lang-btn");
-const langOption = document.querySelector(".lang-selection");
-const bodyOpa = document.querySelectorAll(".opa-cus");
+// const langToggleBtn = document.getElementById("lang-btn");
+// const langOption = document.querySelector(".lang-selection");
+// const bodyOpa = document.querySelectorAll(".opa-cus");
 
-langToggleBtn.addEventListener("click", function() {
-  langOption.classList.toggle("hidden");
-  bodyOpa.classList.toggle("opa-cus");
-})
+// langToggleBtn.addEventListener("click", function() {
+//   langOption.classList.toggle("hidden");
+//   bodyOpa.classList.toggle("opa-cus");
+// })
 
 
 // Special offer slider
