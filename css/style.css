@@ -632,6 +632,10 @@ video {
   margin-right: 0.25rem;
 }
 
+.mr-6{
+  margin-right: 1.5rem;
+}
+
 .block{
   display: block;
 }
@@ -749,6 +753,11 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.rotate-180{
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-auto{
   cursor: auto;
 }
@@ -829,6 +838,10 @@ video {
   border-width: 1px;
 }
 
+.border-0{
+  border-width: 0px;
+}
+
 .border-b{
   border-bottom-width: 1px;
 }
@@ -900,6 +913,11 @@ video {
 .bg-\[\#bfebf9\]{
   --tw-bg-opacity: 1;
   background-color: rgb(191 235 249 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#19aaf8\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 170 248 / var(--tw-bg-opacity));
 }
 
 .bg-cover{
@@ -1130,6 +1148,18 @@ video {
   line-height: 1rem;
 }
 
+.leading-\[\]{
+  line-height: ;
+}
+
+.leading-\[1\.5\]{
+  line-height: 1.5;
+}
+
+.leading-\[1\.5rem\]{
+  line-height: 1.5rem;
+}
+
 .tracking-wider{
   letter-spacing: 0.05em;
 }
@@ -1222,6 +1252,11 @@ video {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 /* Universal Style */
@@ -1479,4 +1514,72 @@ video {
 
 .jaideeSlider {
   height: 299px;
+}
+
+.placeholder\:bg-primary::-moz-placeholder{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 122 208 / var(--tw-bg-opacity));
+}
+
+.placeholder\:bg-primary::placeholder{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 122 208 / var(--tw-bg-opacity));
+}
+
+.placeholder\:bg-\[primary\]::-moz-placeholder{
+  background-color: primary;
+}
+
+.placeholder\:bg-\[primary\]::placeholder{
+  background-color: primary;
+}
+
+.placeholder\:bg-\[\#19aaf8\]::-moz-placeholder{
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 170 248 / var(--tw-bg-opacity));
+}
+
+.placeholder\:bg-\[\#19aaf8\]::placeholder{
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 170 248 / var(--tw-bg-opacity));
+}
+
+.placeholder\:text-lg::-moz-placeholder{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.placeholder\:text-lg::placeholder{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.placeholder\:leading-\[1\.5rem\]::-moz-placeholder{
+  line-height: 1.5rem;
+}
+
+.placeholder\:leading-\[1\.5rem\]::placeholder{
+  line-height: 1.5rem;
+}
+
+.placeholder\:text-white::-moz-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-white::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.placeholder\:opacity-80::-moz-placeholder{
+  opacity: 0.8;
+}
+
+.placeholder\:opacity-80::placeholder{
+  opacity: 0.8;
+}
+
+.focus\:cursor-auto:focus{
+  cursor: auto;
 }
