@@ -3,9 +3,9 @@ const topHeader = document.getElementById("top-header");
 
 window.addEventListener("scroll", function(){
   if(this.window.scrollY > 0) {
-    topHeader.classList.add("opacity-0")
+    topHeader.classList.add("opacity-0");
   } else {
-    topHeader.classList.remove("opacity-0")
+    topHeader.classList.remove("opacity-0");
   }
 })
 
