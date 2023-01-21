@@ -10,14 +10,18 @@ window.addEventListener("scroll", function(){
 });
 
 // Language toggler button
-// const langToggleBtn = document.getElementById("lang-btn");
-// const langOption = document.querySelector(".lang-selection");
-// const bodyOpa = document.querySelectorAll(".opa-cus");
+const langToggleBtn = document.getElementById("lang-btn");
+const langOption = document.querySelector(".lang-selection");
 
-// langToggleBtn.addEventListener("click", function() {
-//   langOption.classList.toggle("hidden");
-//   bodyOpa.classList.toggle("opa-cus");
-// })
+langToggleBtn.onclick = function(){
+  langOption.classList.toggle("hidden");
+}
+
+document.onclick = function(e){
+  if(e.target.id !== "lang-btn" && e.target.id !== "menu"){
+    langOption.classList.add("hidden");
+  }
+}
 
 
 // Special offer slider
@@ -32,7 +36,6 @@ const specialOffer = new Swiper('.specialOffer', {
     centeredSlides: true,
     slidesOffsetBefore: 16,
     spaceBetween: 12,
-    
     autoplay: {
       delay: 2000,
     },
