@@ -11,24 +11,97 @@
 </head>
 <body class="bg-[#F5F5F5] font-kantumruy">
     <!-- Header -->
-    <div class="mx-w-400 bg-[#19aaf8] mx-auto px-3.5 top-header-packages">
-        <div class="flex items-center py-4">
-            <img src="./assets/angle-white.svg" class="block mr-6 rotate-180" alt="Angle down">
-            <form class="flex items-center justify-between w-full" action="#" method="POST">
-                <input type="text" class="bg-transparent text-white text-lg leading-[1.5rem] border-0 outline-none placeholder:bg-[#19aaf8] placeholder:text-white placeholder:opacity-80 placeholder:text-lg placeholder:leading-[1.5rem]" name="search" id="search" placeholder="New year offer" autofocus>
-                <span class="cursor-pointer">
+    <div class="mx-w-400 bg-[#19aaf8] mx-auto px-3.5 shadow-search2 top-header-packages">
+        <div class="flex items-center py-2">
+            <img src="./assets/angle-white.svg" class="block mr-6 rotate-180 cursor-pointer" onclick="window.history.back(-1)" alt="Angle down">
+            <form class="flex items-center justify-between w-full" action="" method="POST">
+                <input type="text" class="bg-transparent text-white text-lg leading-[1.5rem] border-0 outline-none focus:ring-0 placeholder:bg-[#19aaf8] placeholder:text-white placeholder:opacity-90 focus:placeholder:bg-transparent placeholder:text-lg placeholder:leading-[1.5rem]" name="search" id="search-input" placeholder="New year offer" autofocus>
+                <button type="button" class="clear-input hidden cursor-pointer">
                     <svg width="16" height="16" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.473539 25.6181C0.0281677 26.0634 0.011038 26.8 0.473539 27.2454C0.93604 27.7079 1.67262 27.7079 2.11799 27.2454L13.475 15.9055L24.8148 27.2454C25.2602 27.7079 26.0139 27.7079 26.4592 27.2454C26.9046 26.8 26.9046 26.0634 26.4592 25.6181L15.1023 14.2611L26.4592 2.90412C26.9046 2.45875 26.9217 1.70504 26.4592 1.25967C25.9967 0.814301 25.2602 0.814301 24.8148 1.25967L13.475 12.6166L2.11799 1.25967C1.67262 0.814301 0.91891 0.797171 0.473539 1.25967C0.0281677 1.72217 0.0281677 2.45875 0.473539 2.90412L11.8305 14.2611L0.473539 25.6181Z" fill="#FFF"></path></svg>
-                </span>
+                </button>
             </form>
         </div>
     </div>
     <!-- Main -->
-    <div class="mx-w-400 bg-white mx-auto pt-40 h-screen">
-        <!-- Become a dtac family -->
+    <div class="mx-w-400 bg-white mx-auto px-3.5 pt-[4.5rem] min-h-screen">
+        <div class="mb-7">
+            <h2 class="text-lg text-[#0c1026] font-bold leading-6 mb-3">Trending search</h2>
+            <div class="flex items-center flex-wrap gap-3">
+                <div class="flex items-center gap-3">
+                    <span class="bg-[#21212114] h-[30px] inline-block text-sm text-black font-normal leading-5 tracking-wide px-2 py-1.5 rounded-3xl show-line-1">gaming nation discount</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="bg-[#21212114] h-[30px] inline-block text-sm text-black font-normal leading-5 tracking-wide px-2 py-1.5 rounded-3xl show-line-1">dtac coin</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="bg-[#21212114] h-[30px] inline-block text-sm text-black font-normal leading-5 tracking-wide px-2 py-1.5 rounded-3xl show-line-1">internet package</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="bg-[#21212114] h-[30px] inline-block text-sm text-black font-normal leading-5 tracking-wide px-2 py-1.5 rounded-3xl show-line-1">freefire item</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-base text-[#0c1026] font-bold leading-6 mb-4">Popular now</h2>
+            <!-- Card 1 -->
+            <div class="card card-shadow border border-thirtiary mb-4 rounded-lg overflow-hidden cursor-pointer">
+                <div>
+                    <img src="./assets/cmpg_dtacx_banner_en_230103082250_Postpaid_Device_BNPL_Jan23_Android_CampaignDetail_1080x420_EN.jpg" alt="mobile care">
+                </div>
+                <div class="p-2">
+                    <h3 class="text-sm text-[#007AD0] font-bold leading-5 mb-1">
+                        Own 5G device on installment with dtac SabuyPay 0%
+                    </h3>
+                    <p class="text-xs text-[#767676] font-kanit font-light leading-5">
+                        No credit card required. No payment on Day 1
+                    </p>
+                    <a href="#" class="flex items-center text-xs text-[#1A1A1A] font-kanit font-light mt-1">
+                        <span class="font-kanit leading-5">Find out more</span>
+                        <img src="./assets/angle.svg" class="block w-3 ml-1" alt="Angle right">
+                    </a>
+                </div> 
+            </div>
+            <!-- Card 2 -->
+            <div class="card card-shadow border border-thirtiary mb-4 rounded-lg overflow-hidden cursor-pointer">
+                <div>
+                    <img src="./assets/cmpg_dtacx_banner_en_230103082413_Postpaid_Device_BNPL_Jan23_iPhone_CampaignDetail_1080x420_EN.jpg" alt="mobile care">
+                </div>
+                <div class="p-2">
+                    <h3 class="text-sm text-[#007AD0] font-bold leading-5 mb-1">
+                        Exclusive iPhone 14 offer only for you!
+                    </h3>
+                    <p class="text-xs text-[#767676] font-kanit font-light leading-5">
+                        0% interest installment, no credit card needed
+                    </p>
+                    <a href="#" class="flex items-center text-xs text-[#1A1A1A] font-kanit font-light mt-1">
+                        <span class="font-kanit leading-5">Find out more</span>
+                        <img src="./assets/angle.svg" class="block w-3 ml-1" alt="Angle right">
+                    </a>
+                </div> 
+            </div>
+            <!-- Card 3 -->
+            <div class="card card-shadow border border-thirtiary mb-4 rounded-lg overflow-hidden cursor-pointer">
+                <div>
+                    <img src="./assets/cmpg_dtacx_banner_en_220816174050_GoTravel_Staff_CampaignDetail_1080x420_EN.jpg" alt="mobile care">
+                </div>
+                <div class="p-2">
+                    <h3 class="text-sm text-[#007AD0] font-bold leading-5 mb-1">
+                        GO Travel Value package for dtac Employee
+                    </h3>
+                    <p class="text-xs text-[#767676] font-kanit font-light leading-5">
+                        Buy GO Travel pack, Get 10%off on Travel Insurance
+                    </p>
+                    <a href="#" class="flex items-center text-xs text-[#1A1A1A] font-kanit font-light mt-1">
+                        <span class="font-kanit leading-5">Find out more</span>
+                        <img src="./assets/angle.svg" class="block w-3 ml-1" alt="Angle right">
+                    </a>
+                </div> 
+            </div>
+        </div>
     </div>
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="./js/search.js"></script>
 </body>
 </html>

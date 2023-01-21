@@ -20,7 +20,7 @@
                             <div class="mr-3">
                                 <h4 class="text-white text-xl font-bold leading-[26px]">Beyond</h4>
                             </div>
-                            <a href="#" class="bg-white flex flex-grow flex-nowrap items-center mr-2 px-2 py-1 rounded-3xl space-x-2 shadow-search cursor-auto">
+                            <a href="offer.html" class="bg-white flex flex-grow flex-nowrap items-center mr-2 px-2 py-1 rounded-3xl space-x-2 shadow-search cursor-auto">
                                 <div>
                                     <img src="./assets/search.svg" alt="Search">
                                 </div>
@@ -28,12 +28,12 @@
                             </a>
                         </div>
                         <div class="ml-auto">
-                            <a href="#" class="text-white font-normal leading-[1.37rem] flex items-center">English <img src="./assets/angle-white.svg" class="rotate-90 ml-2" alt="Angle down"></a>
+                            <a href="#" class="text-white font-normal leading-[1.37rem] flex items-center" id="lang-btn">English <img src="./assets/angle-white.svg" class="rotate-90 ml-2" alt="Angle down"></a>
                         </div>
                     </div>
                     <div class="absolute top-[8.5rem] w-full">
                         <div class="flex justify-center items-center">
-                            <a href="#" class="mn-w-90 w-200 h-40 bg-white text-[#007AD0] text-base text-center font-bold leading-5 flex items-center justify-center px-3 rounded btn-shadow">Log in</a>
+                            <a href="login.html" class="mn-w-90 w-200 h-40 bg-white text-[#007AD0] text-base text-center font-bold leading-5 flex items-center justify-center px-3 rounded btn-shadow">Log in</a>
                         </div>
                     </div>
                 </div> 
@@ -584,6 +584,20 @@
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Select language -->
+    <div class="mx-w-400 mx-auto">
+        <div class="flex items-center justify-center w-full fixed left-0 bottom-0 z-30">
+            <div class="bg-transparent w-400 mx-w-400 lang-selection hidden">
+                <div class="bg-[#1A1A1A] min-h-screen opacity-80 z-50"></div>
+                <ul class="bg-white" id="menu">
+                    <li class="bg-[#eaf3f5] text-lg text-primary py-3 pl-[4.5rem]">English</li>
+                    <li class="text-lg text-secondary py-3 pl-[4.5rem]">ไทย</li>
+                    <li class="text-lg text-secondary py-3 pl-[4.5rem]">မြန်မာဘာသာ</li>
+                    <li class="text-lg text-secondary py-3 pl-[4.5rem]">ភាសាខ្មែរ</li>
+                </ul>
             </div>
         </div>
     </div>
